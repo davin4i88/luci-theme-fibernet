@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Fibernet=/luci-static/fibernet
+	set luci.main.mediaurlbase=/luci-static/fibernet
+	commit luci
+EOF
+exit 0
