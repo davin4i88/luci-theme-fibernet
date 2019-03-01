@@ -1,9 +1,14 @@
 @import url(custom.css);
+
 @font-face {
-    font-family: icomoon;
-    font-weight: 400;
-    font-style: normal;
-    src: url(fonts/font.eot) format("embedded-opentype"), url(fonts/font.ttf) format("truetype"), url(fonts/font.woff) format("woff"), url(fonts/font.svg) format("svg")
+	font-family: "icomoon";
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/font.eot");
+	src: url("fonts/font.eot") format("embedded-opentype"),
+	url("fonts/font.ttf") format("truetype"),
+	url("fonts/font.woff") format("woff"),
+	url("fonts/font.svg") format("svg");
 }
 
 @font-face {
@@ -192,7 +197,7 @@
 .cbi-button-down,
 .cbi-value-helpicon,
 .showSide {
-    font-family: Geogrotesque, Arial, sans-serif;
+    font-family: icomoon;
     font-weight: 400;
     font-style: normal;
     font-variant: normal;
@@ -233,14 +238,14 @@ html {
 }
 
 body {
-    font-size: .8rem;
     background: #252d38;
-    background-image: linear-gradient(270deg, rgba(21, 79, 145, 0), rgba(31, 61, 85, .28) 56%, rgba(0, 0, 0, .06)), linear-gradient(#252d38, #252d38), linear-gradient(348deg, #091c30, #083865 50%, #03233c);
+    background-image: linear-gradient(270deg, rgba(21, 79, 145, 0), rgba(31, 61, 85, .28) 56%, rgba(0, 0, 0, .06)), linear-gradient(#252d38, #252d38), linear-gradient(348deg, #091c30, #083865 50%, #03233c)
 }
 
 html,
 body {
     font-family: Geogrotesque, Arial, sans-serif;
+    font-weight: 400;
     color: #fff;
     height: 100%;
     margin: 0;
@@ -252,6 +257,10 @@ select {
     border: thin solid #ccc;
     background-image: none;
     padding: .36rem .8rem
+}
+
+a {
+	color: #fff;
 }
 
 .btn,
@@ -394,14 +403,13 @@ footer > a {
     overflow-x: auto;
     width: calc(0% + 15rem);
     height: calc(100% - 4rem);
-    border-right: 1px solid #bf3630;
+    border-right: 1px solid #bf3630
 }
 
 .main-right {
     float: right;
     width: calc(100% - 15rem);
-    height: 100%;
-    
+    height: 100%
 }
 
 .nowrap:not(.td) {
@@ -506,7 +514,7 @@ header > .fill > .container > .status > * {
     display: block;
     color: var(--menu-color);
     text-decoration: none;
-    text-align: right;
+    text-align: right
 }
 
 .main > .main-left > .nav > .slide {
@@ -545,8 +553,8 @@ body[class*="node-"] > .main > .main-left > .nav > .slide > .menu.active::before
     display: block;
     text-decoration: none;
     color: var(--menu-color);
-    padding: .5rem 2.5rem;
     text-align: right;
+    padding: .5rem 2.5rem
 }
 
 .main > .main-left > .nav > .slide:hover {
@@ -554,32 +562,19 @@ body[class*="node-"] > .main > .main-left > .nav > .slide > .menu.active::before
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li {
-    padding: .4rem 2rem;
     font-style: italic;
     text-align: right;
-}
-
-.main > .main-left > .nav > .slide > .slide-menu > .active {
-
+    padding: .4rem 2rem
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
     white-space: nowrap;
     text-decoration: none;
-    font-size: 1rem;
-}
-
-.main > .main-left > .nav > .slide > .slide-menu > .active > a {
-    color: #fff
-}
-
-.main > .main-left > .nav > .slide > .slide-menu > li:not(.active):hover > a {
-
+    font-size: 1rem
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active:hover {
-    cursor: hand;
-
+    cursor: hand
 }
 
 .main > .main-left > .nav > .slide > .menu,
@@ -632,7 +627,7 @@ li {
 
 h1 {
     font-size: 2rem;
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 h2 {
@@ -676,7 +671,7 @@ h5 {
     border: 0;
     border-radius: 0;
     background-color: rgba(0, 0, 0, .1);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .5), 0 0 2px 0 rgba(0, 0, 0, .5);
     margin: 1rem 0 0;
     padding: 2rem
 }
@@ -712,7 +707,7 @@ table,
 .table {
     overflow-y: hidden;
     width: 100%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .5)
 }
 
 .container > .cbi-section:first-of-type > .table[width="100%"] > .tr > .td {
@@ -731,13 +726,13 @@ tr > th,
 .tr > .th,
 .cbi-section-table-row::before,
 #cbi-wireless > #wifi_assoclist_table > .tr:nth-child(2) {
-    border-top: thin solid rgba(0, 0, 0, .5);
+    border-top: thin solid rgba(0, 0, 0, .5)
 }
 
 .cbi-section-table-row {
     margin-bottom: 1rem;
     text-align: center!important;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .5)
 }
 
 .cbi-section-table-row:last-child {
@@ -923,8 +918,8 @@ form[method="post"] + form[method="post"],
 
 .tabs {
     padding-left: .5rem;
-    margin: 0 -2rem;
     border-bottom: solid 1px #bf3630;
+    margin: 0 -2rem
 }
 
 .cbi-tabmenu > li,
@@ -959,15 +954,7 @@ form[method="post"] + form[method="post"],
 .cbi-tabmenu {
     border: thin solid rgba(0, 0, 0, .5);
     border-bottom: 0;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.cbi-tabmenu > li:hover {
-    background-color: rgba(0, 0, 0, .5)
-}
-
-.cbi-tabmenu > li[class~="cbi-tab"] {
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .2)
 }
 
 [data-tab-title] {
@@ -1071,12 +1058,6 @@ form[method="post"] + form[method="post"],
     white-space: normal;
     word-wrap: break-word;
     padding: .25rem
-}
-
-.cbi-rowstyle-2 .cbi-button-up,
-.cbi-rowstyle-2 .cbi-button-down,
-.cbi-rowstyle-2:first-child {
-
 }
 
 .cbi-section-table .cbi-section-table-titles .cbi-section-table-cell {
@@ -1192,7 +1173,7 @@ form[method="post"] + form[method="post"],
 .cbi-dropdown > ul > li[placeholder] {
     font-weight: 700;
     display: none;
-    color: #777;
+    color: #777
 }
 
 .cbi-dropdown > ul > li {
@@ -1246,8 +1227,8 @@ form[method="post"] + form[method="post"],
     max-width: none;
     max-height: 200px!important;
     border: thin solid #918e8c;
-    background: #000000;
-    box-shadow: 0 0 4px #000000;
+    background: #000;
+    box-shadow: 0 0 4px #000
 }
 
 .cbi-dropdown > ul > li[display],
@@ -1459,7 +1440,7 @@ body.modal-overlay-active #modal_overlay {
 .cbi-progressbar::after {
     font-family: Geogrotesque, Arial, sans-serif;
     font-size: 0.9em;
-    font-weight: normal;
+    font-weight: 400;
     font-size-adjust: .38;
     line-height: normal;
     position: absolute;
@@ -1494,7 +1475,6 @@ body.modal-overlay-active #modal_overlay {
 td > .ifacebadge,
 .td > .ifacebadge {
     font-size: .8rem;
-    background-color: #f0f0f0
 }
 
 .ifacebadge > em,
@@ -1559,7 +1539,7 @@ td > .ifacebadge,
 }
 
 .uci-change-list {
-    font-family: Geogrotesque, Arial, sans-serif;
+    font-family: Geogrotesque, Arial, sans-serif
 }
 
 .uci-change-list ins,
@@ -1642,8 +1622,8 @@ td > .ifacebadge,
 
 .ifacebox-head {
     background: #eee;
-    padding: .25em;
     color: #000;
+    padding: .25em
 }
 
 .ifacebox-head.active {
@@ -1748,7 +1728,7 @@ span[data-tooltip] .label {
     opacity: 0;
     border-radius: 3px;
     background: #252d38;
-    box-shadow: 0 0 2px #000000;
+    box-shadow: 0 0 2px #000;
     padding: 2px 5px
 }
 
@@ -1934,23 +1914,23 @@ input[name="nslookup"] {
 }
 
 #cbi-wireless > #wifi_assoclist_table > .tr {
-    box-shadow: inset 1px -1px 0 #ddd, inset -1px -1px 0 #ddd
+    box-shadow: inset 1px -1px 0 rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .5)
 }
 
 #cbi-wireless > #wifi_assoclist_table > .tr.placeholder > .td {
     right: 33px;
     bottom: 33px;
     left: 33px;
-    border-top: thin solid #ddd!important
+    border-top: thin solid rgba(0, 0, 0, .5)!important
 }
 
 #cbi-wireless > #wifi_assoclist_table > .tr.table-titles {
-    box-shadow: inset 1px 0 0 #ddd, inset -1px 0 0 #ddd
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .5), inset -1px 0 0 rgba(0, 0, 0, .5)
 }
 
 #cbi-wireless > #wifi_assoclist_table > .tr.table-titles > .th {
-    border-bottom: thin solid #ddd;
-    box-shadow: 0 -1px 0 0 #ddd
+    border-bottom: thin solid rgba(0, 0, 0, .5);
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .5)
 }
 
 #wifi_assoclist_table > .tr > .td[data-title="RX Rate / TX Rate"] {
@@ -2053,25 +2033,6 @@ input[name="nslookup"] {
     margin: 0
 }
 
-.table[width="100%"],
-.th[width="100%"],
-.td[width="100%"],
-.cbi-section-table-row > .cbi-value-field .cbi-input-select,
-.cbi-section-table-row > .cbi-value-field .cbi-input-text,
-.cbi-section-table-row > .cbi-value-field .cbi-input-password,
-.cbi-section-table-row > .cbi-value-field .cbi-dropdown,
-.cbi-dropdown[open] > ul.dropdown > li > input.create-item-input:first-child:last-child,
-.cbi-dropdown .zonebadge,
-.node-main-login > .main > .main-right,
-#cbi-firewall-zone .td.cbi-section-actions {
-    width: 100%
-}
-
-.main-right > #maincontent,
-.cbi-rowstyle-2 {
-
-}
-
 .pull-right,
 .node-main-login > .main form > div:nth-last-child(1) {
     float: right
@@ -2120,30 +2081,15 @@ body:not(.logged-in) > header > .fill > .container > #logo,
     margin-top: .5rem
 }
 
-.logo {
-	width: 100%;
-
-}
-
 .logo .main-menu-brand {
-	width: 100%;
-	padding: 35px 15px 15px 15px;
+    width: 100%;
+    padding: 35px 15px 15px
 }
 
 .contact-us {
-	padding-top: 7px;
-	font-size: 1rem;
-	color: #fff;
-}
-
-.contact-us a {
-	color: #fff;
-}
-
-.main > .main-left > .nav > li:hover,
-.main > .main-left > .nav > .slide > .menu:hover,
-.main > .main-left > .nav > .slide > .slide-menu > li:hover {
-    
+    padding-top: 7px;
+    font-size: 1rem;
+    color: #fff
 }
 
 table > tbody > tr > td,
@@ -2185,17 +2131,6 @@ tr:first-child > td .tr:first-child > .td,
     text-align: center!important
 }
 
-div > table > tbody > tr:nth-of-type(2n),
-div > .table > .tr:nth-of-type(2n),
-.cbi-section .cbi-section-remove:nth-of-type(2n),
-.container > .cbi-section .cbi-section-node:nth-of-type(2n),
-.cbi-section[id] .cbi-section-remove:nth-of-type(4n+3),
-.cbi-section[id] .cbi-section-node:nth-of-type(4n+4),
-.cbi-tabcontainer > .cbi-value:nth-of-type(2n),
-.cbi-rowstyle-1 {
-    
-}
-
 table table,
 .table .table,
 .cbi-value-field table,
@@ -2234,7 +2169,7 @@ td > table > tbody > tr > td,
 .node-main-login > .main .cbi-input-text {
     min-width: 15rem;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .network-status-table,
@@ -2251,6 +2186,31 @@ td > table > tbody > tr > td,
 .node-status-overview > .main fieldset:nth-child(4) .td:nth-child(2),
 .node-status-processes > .main .table .tr .td:nth-child(3) {
     white-space: normal
+}
+
+.main > .main-left > .nav > .slide > .slide-menu > .active > a,
+.contact-us a {
+    color: #fff
+}
+
+.cbi-tabmenu > li:hover,
+.cbi-tabmenu > li[class~="cbi-tab"] {
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.table[width="100%"],
+.th[width="100%"],
+.td[width="100%"],
+.cbi-section-table-row > .cbi-value-field .cbi-input-select,
+.cbi-section-table-row > .cbi-value-field .cbi-input-text,
+.cbi-section-table-row > .cbi-value-field .cbi-input-password,
+.cbi-section-table-row > .cbi-value-field .cbi-dropdown,
+.cbi-dropdown[open] > ul.dropdown > li > input.create-item-input:first-child:last-child,
+.cbi-dropdown .zonebadge,
+.node-main-login > .main > .main-right,
+#cbi-firewall-zone .td.cbi-section-actions,
+.logo {
+    width: 100%
 }
 
 @keyframes anim-rotate {
@@ -2718,3 +2678,4 @@ td > table > tbody > tr > td,
     .cbi-value-field .cbi-dropdown {
         min-width: 25rem
     }
+}
